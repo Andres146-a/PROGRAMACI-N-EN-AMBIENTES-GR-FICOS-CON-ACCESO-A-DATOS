@@ -12,6 +12,25 @@ Para eso:
 5. Se aplican acciones a algunos componentes, como la capacidad de arrastrar y soltar una etiqueta.
 6. Se añaden escuchadores de eventos para manejar las interacciones del usuario, como hacer clic en botones o cambiar el tamaño de la ventana.
 
+**METODOS UTILIZADOS**:
+
+	**1. Textfield**
+	Se creo un text fiel en el diseño del proyecto , en este código crea un TextField, establece su posición vertical (top) y horizontal (left) dentro del AnchorPane, y luego lo agrega al AnchorPane para que sea visible en la interfaz de usuario..
+
+	**2. ListView**
+	Aqui se crea un ListView y se agrega al AnchorPane. Aquí está el fragmento relevante: Este código crea un ListView vacío y establece su posición dentro del AnchorPane. En este caso, se posiciona en la parte superior izquierda (20.0 desde la parte superior y 220.0 desde la izquierda). Luego, el ListView se agrega al AnchorPane para que sea visible en la interfaz de usuario.
+
+	**3. Metodo label**
+	En el método agregarLabels, se llaman varias veces al método agregarLabel para agregar etiquetas al AnchorPane. Cada llamada especifica el texto y la posición de una etiqueta diferente.
+
+	**4. Agregar el label**
+	El método agregarLabel crea un objeto Label con el texto proporcionado y luego establece la posición superior e izquierda del Label en el AnchorPane utilizando los métodos estáticos setTopAnchor y setLeftAnchor de la clase AnchorPane. Finalmente, agrega el Label al AnchorPane llamando al método getChildren().add(label) del AnchorPane.
+
+EJECUCIÓN
+
+![image](https://github.com/Andres146-a/PROGRAMACI-N-EN-AMBIENTES-GR-FICOS-CON-ACCESO-A-DATOS/assets/124753237/294c10db-041a-4aa2-8da2-5eb1d10cec73)
+![Deber ambiente](https://github.com/Andres146-a/PROGRAMACI-N-EN-AMBIENTES-GR-FICOS-CON-ACCESO-A-DATOS/assets/124753237/d0c02bb7-e3a9-4231-9f40-bf3ce142d9b8)
+
 CÓDIGO:
 
 package pruebaGrafica2;import java.awt.EventQueue;
@@ -231,7 +250,3 @@ public class VentanaPrincipal {
     }
 }
 
-EJECUCIÓN
-
-![image](https://github.com/Andres146-a/PROGRAMACI-N-EN-AMBIENTES-GR-FICOS-CON-ACCESO-A-DATOS/assets/124753237/294c10db-041a-4aa2-8da2-5eb1d10cec73)
-![Deber ambiente](https://github.com/Andres146-a/PROGRAMACI-N-EN-AMBIENTES-GR-FICOS-CON-ACCESO-A-DATOS/assets/124753237/d0c02bb7-e3a9-4231-9f40-bf3ce142d9b8)
